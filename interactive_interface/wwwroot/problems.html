@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线OJ - 题库列表</title>
+    <link rel="stylesheet" type="text/css" href="/problems/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/problems/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="/problems/css/components.css">
+    <link rel="stylesheet" type="text/css" href="/problems/css/problems.css">
+    <link rel="icon" type="image/x-icon" href="/problems/sennzai.ico">
+</head>
+<body>
+    <header class="oj-header">
+        <div class="container">
+            <h1 class="logo">Online Judge</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/problems/problems.html">题库</a></li>
+                    <li>竞赛</li>
+                    <li>排名</li>
+                    <li>关于</li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <span class="btn login-btn">登录</span>
+                <span class="btn register-btn">注册</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="card problem-filter">
+            <input type="text" placeholder="搜索题目..." class="search-input">
+            <select class="difficulty-select">
+                <option value="">所有难度</option>
+                <option value="easy">简单</option>
+                <option value="medium">中等</option>
+                <option value="hard">困难</option>
+            </select>
+            <select class="tag-select">
+                <option value="">所有标签</option>
+            </select>
+        </div>
+
+        <div class="card problem-list">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th width="10%">ID</th>
+                        <th width="40%">题目</th>
+                        <th width="35%">标签</th>
+                        <th width="15%">难度</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="oj-footer">
+        <div class="container">
+            <p>© 2023 Online Judge System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/problems/js/common.js"></script>
+    <script src="/problems/js/problems.js"></script>
+</body>
+</html>

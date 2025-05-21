@@ -1,0 +1,323 @@
+/* 题目页面专用样式 */
+
+/* LeetCode风格布局 */
+.leetcode-layout 
+{
+    display: flex;
+    height: calc(100vh - 150px);
+    margin-top: 20px;
+    position: relative;
+    gap: 10px;
+}
+
+.problem-description-container 
+{
+    width: 50%;
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.coding-container 
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.resize-handle 
+{
+    width: 8px;
+    height: 100%;
+    background-color: #f1f3f5;
+    cursor: col-resize;
+    transition: background-color 0.2s;
+}
+
+.resize-handle:hover 
+{
+    background-color: var(--primary-color);
+}
+
+/* 题目描述区域样式 */
+.problem-header 
+{
+    margin-bottom: 20px;
+}
+
+.problem-title 
+{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--dark-color);
+    margin-bottom: 5px;
+}
+
+.problem-meta 
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--text-light);
+    font-size: 14px;
+}
+
+.problem-tabs 
+{
+    display: flex;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 15px;
+}
+
+.tab-btn 
+{
+    padding: 8px 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--text-light);
+    position: relative;
+}
+
+.tab-btn.active 
+{
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.tab-btn.active:after 
+{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.tab-panel 
+{
+    display: none;
+}
+
+.tab-panel.active 
+{
+    display: block;
+}
+
+.content-text 
+{
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.content-text p 
+{
+    margin-bottom: 15px;
+}
+
+.content-text code 
+{
+    background-color: #f3f4f6;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    font-size: 14px;
+}
+
+.content-text div 
+{
+    white-space: pre-wrap;
+}
+
+.sample 
+{
+    margin: 20px 0;
+}
+
+.sample h3 
+{
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.sample pre 
+{
+    background-color: #f8f9fa;
+    padding: 12px;
+    border-radius: var(--border-radius);
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    margin: 8px 0;
+}
+
+.constraints h3 
+{
+    font-size: 16px;
+    margin: 20px 0 10px;
+    font-weight: 500;
+}
+
+.constraints ul 
+{
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.constraints li 
+{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* 代码编辑区域样式 */
+.editor-toolbar 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.language-selector 
+{
+    padding: 5px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: white;
+    font-size: 14px;
+}
+
+.toolbar-actions 
+{
+    display: flex;
+    gap: 8px;
+}
+
+.toolbar-actions .btn 
+{
+    padding: 5px 12px;
+    font-size: 13px;
+}
+
+.reset-btn 
+{
+    background-color: transparent;
+    color: var(--text-light);
+    border: 1px solid var(--border-color);
+}
+
+.reset-btn:hover 
+{
+    background-color: #f1f3f5;
+}
+
+.run-btn 
+{
+    background-color: var(--warning-color);
+}
+
+.submit-btn 
+{
+    background-color: var(--success-color);
+}
+
+.code-editor,
+.editor-highlight,
+.editor-line-numbers 
+{
+    position: absolute;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    tab-size: 4;
+    top: 0;
+    white-space: pre;
+    box-sizing: border-box;
+    height: auto;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+.editor-container 
+{
+    position: relative;
+    height: 500px;
+    overflow-x: auto;
+    overflow-y: auto;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+}
+
+.code-editor 
+{
+    left: 40px;
+    width: calc(100% - 40px);
+    padding: 15px;
+    border: none;
+    resize: none;
+    outline: none;
+    background: transparent;
+    color: #333;
+    z-index: 1;
+}
+
+.editor-line-numbers 
+{
+    left: 0;
+    width: 40px;
+    padding: 15px 5px;
+    color: #999;
+    text-align: right;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ddd;
+    user-select: none;
+    z-index: 2;
+}
+
+.editor-highlight 
+{
+    left: 40px;
+    width: calc(100% - 40px);
+    padding: 15px;
+    color: transparent;
+    background: transparent;
+    pointer-events: none;
+    z-index: 3;
+}
+
+/* 响应式设计 */
+@media (max-width: 992px) 
+{
+    .leetcode-layout 
+    {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .problem-description-container, 
+    .coding-container 
+    {
+        width: 100%;
+        height: auto;
+    }
+    
+    .problem-description-container 
+    {
+        margin-bottom: 20px;
+    }
+    
+    .resize-handle 
+    {
+        display: none;
+    }
+}

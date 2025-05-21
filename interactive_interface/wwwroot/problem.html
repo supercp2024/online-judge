@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>两数之和 - 在线OJ</title>
+        <link rel="stylesheet" type="text/css" href="/problems/css/base.css">
+        <link rel="stylesheet" type="text/css" href="/problems/css/layout.css">
+        <link rel="stylesheet" type="text/css" href="/problems/css/components.css">
+        <link rel="stylesheet" type="text/css" href="/problems/css/problem.css">
+        <link rel="stylesheet" type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+        <link rel="icon" type="image/x-icon" href="/problems/sennzai.ico">
+    </head>
+    <body>
+        <header class="oj-header">
+            <div class="container">
+                <h1 class="logo">Online Judge</h1>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/problems/problems.html">题库</a></li>
+                        <li>竞赛</li>
+                        <li>排名</li>
+                        <li>关于</li>
+                    </ul>
+                </nav>
+                <div class="user-actions">
+                    <span class="btn login-btn">登录</span>
+                    <span class="btn register-btn">注册</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="container leetcode-layout">
+            <!-- 左侧题目描述区域 -->
+            <div class="card problem-description-container"
+                id="problem-description-container">
+                <div class="problem-header">
+                </div>
+                <div class="problem-tabs">
+                    <button class="tab-btn active"
+                        data-tab="description">题目描述</button>
+                    <button class="tab-btn" data-tab="solutions">题解</button>
+                    <button class="tab-btn" data-tab="submissions">提交记录</button>
+                    <button class="tab-btn" data-tab="discussion">讨论</button>
+                </div>
+
+                <div class="problem-content">
+                    <div class="tab-panel active" id="description">
+                        <div class="content-text">
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="solutions">
+                        <div class="content-text">
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="submissions">
+                        <div class="content-text">
+                            <h3>提交记录</h3>
+                            <div class="submission-list">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="discussion">
+                        <div class="content-text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 分割条 -->
+            <div class="resize-handle" id="resize-handle"></div>
+
+            <!-- 替换原来的代码编辑区 -->
+            <div class="card coding-container">
+                <div class="editor-toolbar">
+                    <select class="language-selector" id="language-selector">
+                        <option value="cpp" selected>C++</option>
+                        <option value="c">C</option>
+                        <option value="js">javascript</option>
+                        <option value="py">python</option>
+                        <option value="java">java</option>
+                        <option value="c#">C#</option>
+                    </select>
+                    <div class="toolbar-actions">
+                        <button class="btn reset-btn" id="reset-btn">重置代码</button>
+                        <button class="btn submit-btn" id="submit-btn">提交</button>
+                    </div>
+                </div>
+                
+                <!-- 使用textarea作为代码编辑器基础 -->
+                <textarea class="code-editor" id="code-editor"></textarea>
+            </div>
+        </main>
+
+        <footer class="oj-footer">
+            <div class="container">
+                <p>© 2023 Online Judge System. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/cpp.min.js"></script>
+        <script src="/problems/js/common.js"></script>
+        <script src="/problems/js/problem.js"></script>
+    </body>
+</html>

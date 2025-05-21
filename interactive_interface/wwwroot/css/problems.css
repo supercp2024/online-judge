@@ -1,0 +1,43 @@
+/* 题库页面专用样式 */
+.problem-filter 
+{
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.search-input 
+{
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+}
+
+.difficulty-select, .tag-select 
+{
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: white;
+}
+
+.problem-list 
+{
+    margin-bottom: 20px;
+}
+
+.solve-btn 
+{
+    background-color: var(--success-color);
+    color: white;
+}
+
+.solve-btn:hover 
+{
+    background-color: #28a745;
+}

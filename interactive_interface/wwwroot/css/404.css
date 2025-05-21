@@ -1,0 +1,35 @@
+/* 404页面专用样式 */
+.not-found-container 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    text-align: center;
+}
+
+.not-found-content h1 
+{
+    font-size: 100px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.not-found-content h2 
+{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.not-found-content p 
+{
+    margin-bottom: 20px;
+    color: var(--text-light);
+}
+
+.home-btn 
+{
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    font-size: 16px;
+}
